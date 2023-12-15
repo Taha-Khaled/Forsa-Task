@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import styles from "../styles/Home.module.scss";
 import getPropertiesList from "../apis/getPropertiesList";
 import { PropertyType } from "../types/propertyType";
 
@@ -8,7 +7,7 @@ interface HomeProps {
 }
 
 const Home: NextPage<HomeProps> = ({ properties }) => {
-  return <div className={styles.container}></div>;
+  return <div className={"container"}></div>;
 };
 
 export async function getServerSideProps() {

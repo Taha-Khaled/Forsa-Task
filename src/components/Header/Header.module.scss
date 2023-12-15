@@ -1,0 +1,18 @@
+.headerContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 81px;
+  gap: 64px;
+  background-color: white;
+  .logIn {
+    font-family: "Poppins-Regular";
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .signUp {
+    font-family: "Poppins-SemiBold";
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
