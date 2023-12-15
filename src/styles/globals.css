@@ -29,6 +29,7 @@ body {
   font-family: "Poppins-Regular", "Poppins-SemiBold", "Poppins-Light",
     -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--main-blue);
 }
 
 a {
