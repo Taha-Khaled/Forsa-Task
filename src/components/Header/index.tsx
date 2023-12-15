@@ -5,7 +5,11 @@ import styles from "./Header.module.scss";
 
 const Header: FunctionComponent = () => {
   return (
-    <Grid container className={`container ${styles.headerContainer}`}>
+    <Grid
+      container
+      component={"header"}
+      className={`container ${styles.headerContainer}`}
+    >
       <Grid item>
         <IconButton>
           <Image

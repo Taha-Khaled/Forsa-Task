@@ -7,7 +7,7 @@ import type { AppProps } from "next/app";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
-      <Header />
+      {/* <Header /> */}
       <Component {...pageProps} />
       <Footer />
     </Fragment>

@@ -1,0 +1,59 @@
+.footerContainer {
+  background-color: var(--main-blue);
+  color: var(--white);
+  height: 496px;
+  padding-top: 138px;
+  padding-inline-start: 461px;
+
+  @media screen and (max-width: 1080px) {
+    padding-inline-start: 250px;
+  }
+
+  @media screen and (max-width: 860px) {
+    padding: 80px 16px 0;
+  }
+
+  @media screen and (max-width: 542px) {
+    height: 383px;
+  }
+
+  .listsWrapper {
+    display: flex;
+    gap: 56px;
+
+    @media screen and (max-width: 542px) {
+      flex-direction: column;
+    }
+
+    .linksList {
+      display: flex;
+      gap: 118px;
+    }
+
+    .list {
+      font-family: "Poppins-Light";
+      font-size: 14px;
+      line-height: 20px;
+      height: fit-content;
+      padding: 0;
+
+      li {
+        padding: 0;
+        margin-bottom: 11px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .title {
+        margin-bottom: 17px;
+      }
+
+      .socialMedia {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+    }
+  }
+}
