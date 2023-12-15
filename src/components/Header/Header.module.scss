@@ -6,13 +6,24 @@
   gap: 64px;
   background-color: white;
   .logIn {
-    font-family: "Poppins-Regular";
-    font-size: 22px;
-    line-height: 33px;
+    p {
+      font-family: "Poppins-Regular";
+      font-size: 22px;
+      line-height: 33px;
+    }
   }
   .signUp {
-    font-family: "Poppins-SemiBold";
-    font-size: 22px;
-    line-height: 33px;
+    p {
+      font-family: "Poppins-SemiBold";
+      font-size: 22px;
+      line-height: 33px;
+    }
+  }
+  @media screen and (max-width: 542px) {
+    .logIn,
+    .signUp,
+    .language {
+      display: none;
+    }
   }
 }

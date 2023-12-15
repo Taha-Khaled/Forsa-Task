@@ -42,4 +42,12 @@ a {
 }
 .container {
   padding: 0 300px;
+
+  @media screen and (max-width: 1080px) {
+    padding: 0 200px;
+  }
+
+  @media screen and (max-width: 850px) {
+    padding: 0 16px;
+  }
 }

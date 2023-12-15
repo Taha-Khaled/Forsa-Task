@@ -10,7 +10,7 @@ const Header: FunctionComponent = () => {
       component={"header"}
       className={`container ${styles.headerContainer}`}
     >
-      <Grid item>
+      <Grid item className={styles.language}>
         <IconButton>
           <Image
             src="/images/language.svg"
@@ -20,11 +20,11 @@ const Header: FunctionComponent = () => {
           />
         </IconButton>
       </Grid>
-      <Grid item>
-        <Typography className={styles.logIn}>Log in</Typography>
+      <Grid item className={styles.logIn}>
+        <Typography>Log in</Typography>
       </Grid>
-      <Grid item>
-        <Typography className={styles.signUp}>Sign up</Typography>
+      <Grid item className={styles.signUp}>
+        <Typography>Sign up</Typography>
       </Grid>
       <Grid item>
         <IconButton>
