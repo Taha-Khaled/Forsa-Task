@@ -1,0 +1,31 @@
+.areaFilterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 33px;
+  @media screen and (max-width: 542px) {
+    .card3,
+    .card4,
+    .card5 {
+      display: none;
+    }
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .areaCard {
+    background-color: var(--area-bgColor);
+    padding: 11px 19px 12px 16px;
+    border-radius: 12px;
+    p {
+      font-size: 14px;
+      width: fit-content;
+    }
+    @media screen and (max-width: 665px) {
+      padding: 10px 7px;
+    }
+    &:first-child {
+      color: var(--white);
+      background-color: var(--main-blue);
+    }
+  }
+}
