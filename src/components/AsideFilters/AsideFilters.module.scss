@@ -1,0 +1,53 @@
+.asideFiltersContainer {
+  width: 290px;
+  height: 1047px;
+  border-radius: 10px;
+  border: 1px solid var(--filter-border);
+  padding: 20px;
+  .header {
+    h2 {
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 16px;
+      font-family: "Poppins-SemiBold";
+    }
+  }
+  .title {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    font-family: "Poppins-SemiBold";
+  }
+  :global {
+    .MuiSlider-root {
+      color: var(--range-input) !important;
+      margin-bottom: 30px;
+    }
+    .MuiButtonBase-root {
+      padding: 0;
+    }
+    .MuiFormGroup-root {
+      gap: 12px;
+      margin-bottom: 16px;
+      label {
+        margin-left: 0;
+        color: var(--card-text);
+        span {
+          font-family: "Poppins-Regular";
+          &:last-child {
+            margin-inline-start: 10px;
+          }
+        }
+      }
+    }
+    .MuiSlider-valueLabel {
+      background-color: transparent;
+      color: var(--main-blue);
+      font-family: "Poppins-Regular";
+      font-size: 12px;
+      line-height: 17px;
+      top: 50px;
+    }
+  }
+}

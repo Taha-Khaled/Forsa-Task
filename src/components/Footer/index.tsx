@@ -1,7 +1,6 @@
 import { FunctionComponent } from "react";
 import styles from "./Footer.module.scss";
 import { Box, List, ListItem } from "@mui/material";
-import { Facebook, FacebookOutlined } from "@mui/icons-material";
 import Image from "next/image";
 
 const Footer: FunctionComponent = () => {

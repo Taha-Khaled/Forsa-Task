@@ -6,8 +6,8 @@ export type PropertyType = {
   price: number;
   area: number;
   home_type: string;
-  bedrooms_no: number;
-  bathrooms_no: number;
+  bedrooms_no: string;
+  bathrooms_no: string;
   furnished: boolean;
   address: string;
   lat?: string;

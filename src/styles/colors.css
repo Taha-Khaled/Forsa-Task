@@ -1,9 +1,10 @@
 :root {
   --main-background: #f3f3f3;
-  --card-background: #6d7888;
+  --card-text: #6d7888;
   --like-background: rgba(168, 168, 168, 0.6);
   --area-bgColor: #e7e7e7;
   --main-blue: #0c1f39;
   --range-input: #e3256c;
   --white: #ffffff;
+  --filter-border: #a4abb6;
 }

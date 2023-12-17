@@ -1,0 +1,12 @@
+.chip {
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0;
+}
+.selected {
+  background-color: var(--main-blue);
+  color: var(--white);
+}

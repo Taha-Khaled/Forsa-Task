@@ -3,6 +3,23 @@
   padding-bottom: 180px;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 665px) {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .filterBtn {
+    display: none;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 10;
+    button {
+      padding: 0;
+    }
+    @media screen and (max-width: 665px) {
+      display: block;
+    }
+  }
   .title {
     margin-bottom: 47px;
     h1 {
@@ -10,11 +27,21 @@
       font-family: "Poppins-SemiBold";
       line-height: 45px;
     }
+    @media screen and (max-width: 665px) {
+      margin-bottom: 32px;
+    }
   }
   .homeWrapper {
     display: flex;
     gap: 35px;
-    justify-content: center;
+    position: relative;
+    @media screen and (max-width: 665px) {
+      display: block;
+      width: 100%;
+      aside {
+        display: none;
+      }
+    }
   }
   .center {
     display: flex;
