@@ -61,7 +61,7 @@ const SidePageFilters: FunctionComponent<FiltersProps> = ({
             min={1000}
             max={3000000}
             minDistance={50000}
-            valueFormatter={(price) => Intl.NumberFormat().format(price)}
+            labelFormatter={(price) => Intl.NumberFormat().format(price)}
             defaultValue={filters?.priceRange}
           />
         </Box>
@@ -84,7 +84,7 @@ const SidePageFilters: FunctionComponent<FiltersProps> = ({
             min={0}
             max={300}
             minDistance={25}
-            valueFormatter={(price) => `${price} sqm`}
+            labelFormatter={(price) => `${price} sqm`}
             defaultValue={filters?.area}
           />
         </Box>

@@ -5,9 +5,9 @@
   margin-bottom: 48px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 950px;
+  width: 100%;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1600px) {
     grid-template-columns: 1fr 1fr;
   }
 

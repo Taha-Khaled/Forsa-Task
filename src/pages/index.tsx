@@ -6,7 +6,7 @@ import { Box, Grid, IconButton, Pagination, Typography } from "@mui/material";
 import PropertiesList from "../components/PropertiesList";
 import AsideFilters from "../components/AsideFilters";
 import AreaFilter from "../components/AreaFilter";
-import { Fragment, SetStateAction, useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -122,11 +122,7 @@ const Home: NextPage<HomeProps> = ({ items }) => {
               <Typography component={"h1"}>Explore properties</Typography>
             </Grid>
             <Grid item className={styles.homeWrapper}>
-              <AsideFilters
-                filters={filters!}
-                setFilters={setFilters}
-                handelApplyFilter={handelApplyFilter}
-              />
+              <AsideFilters filters={filters!} setFilters={setFilters} />
               <Grid>
                 <AreaFilter />
                 {properties?.length ? (

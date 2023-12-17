@@ -9,13 +9,8 @@ import { FiltersType } from "../../types/FiltersType";
 interface FiltersProps {
   filters: FiltersType;
   setFilters: Dispatch<SetStateAction<FiltersType>>;
-  handelApplyFilter?: () => void;
 }
-const AsideFilters = ({
-  filters,
-  setFilters,
-  handelApplyFilter,
-}: FiltersProps) => {
+const AsideFilters = ({ filters, setFilters }: FiltersProps) => {
   const Title = ({ text }: { text: string }) => {
     return (
       <Typography component={"h3"} className={styles.title}>
@@ -49,7 +44,7 @@ const AsideFilters = ({
           min={1000}
           max={5000000}
           minDistance={1000}
-          valueFormatter={(price) => Intl.NumberFormat().format(price)}
+          labelFormatter={(price) => Intl.NumberFormat().format(price)}
           defaultValue={filters?.priceRange}
         />
         <Divider />
@@ -73,7 +68,7 @@ const AsideFilters = ({
           min={0}
           max={300}
           minDistance={25}
-          valueFormatter={(price) => `${price} sqm`}
+          labelFormatter={(price) => `${price} sqm`}
           defaultValue={filters?.area}
         />
         <Divider />

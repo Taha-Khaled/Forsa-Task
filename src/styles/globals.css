@@ -44,9 +44,6 @@ a {
   padding: 0 300px;
 
   @media screen and (max-width: 1280px) {
-    padding: 0 200px;
-  }
-  @media screen and (max-width: 1080px) {
     padding: 0 50px;
   }
 

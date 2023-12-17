@@ -9,7 +9,7 @@ interface RangeInputProps {
   min: number;
   max: number;
   minDistance: number;
-  valueFormatter: (price: number) => string | number;
+  labelFormatter: (price: number) => string | number;
   defaultValue?: number[];
 }
 
@@ -18,7 +18,7 @@ const RangeInput: FunctionComponent<RangeInputProps> = ({
   setFilters,
   name,
   minDistance,
-  valueFormatter,
+  labelFormatter,
   max,
   min,
   defaultValue,
@@ -58,7 +58,7 @@ const RangeInput: FunctionComponent<RangeInputProps> = ({
         value={priceRange}
         onChange={handleChangePriceRange}
         valueLabelDisplay="auto"
-        valueLabelFormat={valueFormatter}
+        valueLabelFormat={labelFormatter}
         min={min}
         max={max}
         color="primary"
